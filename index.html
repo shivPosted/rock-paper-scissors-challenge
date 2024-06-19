@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -22,24 +23,24 @@
     </header>
     <main class="choice--container">
       <img src="/images/bg-triangle.svg" alt="" />
-      <div class="choice--icon rock-container">
+      <div class="choice--icon rock-container" data-choice="0">
         <div class="choice--icon-circle">
           <img src="/images/icon-rock.svg" alt="" />
         </div>
       </div>
-      <div class="choice--icon paper-container">
+      <div class="choice--icon paper-container" data-choice="1">
         <div class="choice--icon-circle">
           <img src="/images/icon-paper.svg" alt="" />
         </div>
       </div>
-      <div class="choice--icon scissors-container">
+      <div class="choice--icon scissors-container" data-choice="2">
         <div class="choice--icon-circle">
           <img src="/images/icon-scissors.svg" alt="" />
         </div>
       </div>
     </main>
     <div class="rules-btn">rules</div>
-    <div class="rules-ovelay hidden">
+    <div class="rules-overlay hidden">
       <div class="rules-menu-interact">
         <h3>RULES</h3>
         <img class="close-btn" src="/images/icon-close.svg" alt="" />
@@ -52,19 +53,22 @@
       <h4>You Picked</h4>
       <h4>The House Picked</h4>
 
-      
-        <div class="choice--icon scissors-container">
+      <div class="user--choice">
+        <!-- <div class="choice--icon scissors-container">
           <div class="choice--icon-circle">
             <img src="/images/icon-scissors.svg" alt="" />
           </div>
-        </div>
+        </div> -->
+      </div>
 
-        <div class="choice--icon rock-container">
+      <div class="computer--choice">
+        <!-- <div class="choice--icon rock-container">
           <div class="choice--icon-circle">
             <img src="/images/icon-rock.svg" alt="" />
           </div>
-        </div>
+        </div> -->
       </div>
+
       <div class="result-overlay hidden">
         <p class="result-status">You Win</p>
         <div class="play-again-btn">Play Again</div>
