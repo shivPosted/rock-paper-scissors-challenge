@@ -10,6 +10,7 @@ body {
   font-size: 62.5%;
   font-family: 'Barlow Semi Condensed', sans-serif;
   background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  overflow: hidden;
 }
 
 header {
@@ -207,7 +208,7 @@ h3 {
 }
 .play-choice-section.hidden {
   transform: scale(0.3);
-  /* opacity: 0; */
+  opacity: 0;
 }
 /*////////////////////*/
 
